@@ -13,7 +13,7 @@
           <a class="nav-link {{ ($active === "about") ? 'active' : '' }}" href="/about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {{ ($active === "posts") ? 'active' : '' }}" href="/blog">Blog</a>
+          <a class="nav-link {{ ($active === "blog") ? 'active' : '' }}" href="/posts">Blog</a>
         </li>
       </li>
       <li class="nav-item">
@@ -34,7 +34,7 @@
               <li>
                 <form action="/logout" method="post">
                   @csrf
-                  <button type="submit" class="dropdown-item"><i class="bi bi-box-arrow-right"></i></button>
+                  <button type="submit" class="dropdown-item"><i class="bi bi-box-arrow-right"></i>log out</button>
                 </form>
               </li>
             </ul>
